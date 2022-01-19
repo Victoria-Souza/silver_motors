@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 2vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(8px + 2vmin);
+  color: white;
+  padding: 0vh 2vw;
+}
+
+h1 {
+  font-size: calc(15px + 2vmin);
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: 10vmin;
+  font-size: calc(7px + 2vmin);
+}
+
+ul li {
+  margin-right: calc(7px + 2vmin);
+}
+
+.pesquisa {
+  display: flex;
+  padding: calc(10px + 2vmin);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+input {
+  border-radius: 2vh;
+  height: 5vh;
+  width: 40vw;
+  margin-left: calc(7px + 2vmin);
+}
+
+.principal {
+  width: 100vw;
+  margin-top: calc(10px + 2vmin);
+}
+
+.produtos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.produto {
+  padding: calc(4px + 2vmin);
+  width: 25vw;
+
+  border-radius: 2vh;
+  box-shadow: gray 2px 2px 4px 4px;
+}
+
+.preco {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.produtos img {
+  height: 150px;
+  width: 200px;
+}
+
+h2 {
+  font-size: calc(6px + 2vmin);
+  text-align: left;
+  margin-bottom: calc(1px + 2vmin);
+}
+
+.produto p {
+  text-align: left;
+  font-size: calc(3px + 2vmin);
+}
+
+button {
+  height: 7vh;
+  border-radius: 25%;
+  background-color: rgb(212, 212, 212);
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0vh 2vh;
+  box-shadow: rgb(102, 102, 102) 2px 2px;
+}
+
+button:hover {
+  background-color: rgb(110, 110, 110);
+  color: #fff;
+  transition: all 0.5s ease-in;
+}
+
+footer {
+  margin-top: calc(20px + 2vmin);
+  background-color: gray;
+  height: 25vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.redes_sociais,
+.contato {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.redes_sociais ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li img{
+  width: 6vw;
+  list-style: none;
+}
