@@ -1,31 +1,26 @@
 import '../App.css';
 import iconeWhat from '../img/icone_wpp.svg';
-import iconeFace from '../img/icone_face.svg';
-import iconeInst from '../img/icone_instagram.svg';
 import iconePhone from '../img/icone_phone.svg';
 import iconeMail from '../img/icone_mail.svg';
-import iconeHouse from '../img/icone_house.svg';
 
-export default function footer(){
+export default function Footer(){
     return(
-        <div>
-            <footer>
-                <div className="redes_sociais">
+        <div className="footer">
+            <div className="Sobre">
+                <h2>Sobre a empresa</h2>
+                <p>Somos uma empresa que realiza a 
+                    venda de carros e motos variados, </p>
+                   <p> entregando a melhor qualidade de compra sempre!
+                </p>
+            </div>
+            <div className="contato">
+                <h2>Meios de Contato</h2>
                 <ul>
                     <li><img src={iconeWhat} alt='Whatsapp'/></li>
-                    <li><img src={iconeFace} alt='Facebook'/></li>
-                    <li><img src={iconeInst} alt='Instagram'/></li>
+                    <li><img src={iconePhone} alt='Facebook'/></li>
+                    <li><img src={iconeMail} alt='Instagram'/></li>
                 </ul>
-                </div>
-
-                <div className="contato">
-                <ul>
-                    <li><img src={iconePhone} alt='Telefone'/></li>
-                    <li><img src={iconeMail} alt='E-mail'/></li>
-                    <li><img src={iconeHouse} alt='Endereço'/></li>
-                </ul>
-                </div>
-            </footer>
+            </div>
       </div>
     )
 }

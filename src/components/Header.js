@@ -1,4 +1,5 @@
 import '../App.css';
+import iconeUser from '../img/icone_user.svg';
 
 
 export default function Header(){
@@ -6,13 +7,12 @@ export default function Header(){
         <header className="App-header">
             <h1>SILVER MOTORS</h1>
             <ul>
-            <li>Serviço 1</li>
-            <li>Serviço 2</li>
-            <li>Serviço 3</li>
+            <li className="carros">CARROS</li>
+            <li>MOTOS</li>
             </ul>
             <button>
             Entrar
-            
+            <img src={iconeUser} alt="Icone de usuário"/>
             </button>
         </header>
     )

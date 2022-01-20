@@ -5,7 +5,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #343a46;
   min-height: 2vh;
   display: flex;
   flex-direction: row;
@@ -13,45 +13,91 @@
   justify-content: space-between;
   font-size: calc(8px + 2vmin);
   color: white;
-  padding: 0vh 2vw;
+  padding: 0vh 5vw;
+  margin-bottom: 0;
 }
 
 h1 {
   font-size: calc(15px + 2vmin);
+  font-family:'Stencil', Arial, Helvetica, sans-serif;
 }
 
 header ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin-left: 10vmin;
-  font-size: calc(7px + 2vmin);
+  margin-left: 30vw;
+  font-size: calc(5px + 2vmin);
 }
 
 ul li {
-  margin-right: calc(7px + 2vmin);
+  margin-right: calc(15px + 2vmin);
+}
+
+.carros {
+  border-bottom: solid red 4px;
+  border-radius: 4px;
+}
+
+header ul li:hover{
+  color: rgb(255, 0, 0);
+  transition: all 0.5s ease-in;
+}
+
+header button{
+  display: flex;
+  flex-direction: row;
+}
+
+button img{
+  height: 3vh;
+  margin-left: 0.5vw;
+}
+
+.fundo{
+  background-image: url(./img/banner_img.jpg);
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner{
+  height: 60vh;
+  background-color: #343a469a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  word-spacing: 5px;
+}
+
+.disponiveis{
+  font-size:  calc(12px + 2vmin);
+  color: #343a46;
 }
 
 .pesquisa {
   display: flex;
-  padding: calc(10px + 2vmin);
+  padding: calc(15px + 2vmin);
   align-items: center;
   justify-content: flex-end;
 }
 
 input {
   border-radius: 2vh;
-  height: 5vh;
-  width: 40vw;
+  height: calc(3vh + 2vmin);
+  width: calc(25vw + 2vmin);
   margin-left: calc(7px + 2vmin);
+  padding-left: 10px;
 }
 
-.principal {
+.produtos{
+  margin-top: calc(5px + 2vmin);
   width: 100vw;
-  margin-top: calc(10px + 2vmin);
 }
 
-.produtos {
+.linha {
+  margin-bottom: calc(8vh + 5vmin);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -89,46 +135,52 @@ h2 {
 }
 
 button {
-  height: 7vh;
-  border-radius: 25%;
-  background-color: rgb(212, 212, 212);
+  border-radius: 50%;
+  background-color: rgb(233, 169, 169);
   font-weight: bold;
   color: rgb(0, 0, 0);
   border: none;
-  padding: 0vh 2vh;
-  box-shadow: rgb(102, 102, 102) 2px 2px;
+  padding: calc(1vh + 1vmin);
+  box-shadow: rgb(121, 91, 91) 2px 2px;
 }
 
 button:hover {
-  background-color: rgb(110, 110, 110);
+  background-color: rgb(255, 0, 0);
   color: #fff;
+  box-shadow: #000;
   transition: all 0.5s ease-in;
 }
 
-footer {
+.footer{
   margin-top: calc(20px + 2vmin);
-  background-color: gray;
-  height: 25vh;
+  background-color: rgb(201, 201, 201);
+  height: 10vh;
   width: 100vw;
-  display: flex;
-  flex-direction: row;
-}
-
-.redes_sociais,
-.contato {
+  padding: calc(20px + 2vmin);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 50vw;
 }
 
-.redes_sociais ul {
+
+.contato, .sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(30vw + 2vmin);
+  margin: calc(20px + 2vmin);
+}
+
+.contato ul {
   display: flex;
   flex-direction: row;
+  list-style: none;
 }
 
-li img{
-  width: 6vw;
-  list-style: none;
+ 
+
+li img {
+  height: calc(5vh + 2vmin);
 }
